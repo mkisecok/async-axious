@@ -1,3 +1,10 @@
-import data from "./data.js";
+import getData from "./data.js";
 
-data(2);
+//1.solution
+(async () => {
+  const end = await getData(1);
+  console.log(end);
+})();
+
+// 2. solution
+// getData(1).then((result) => console.log(result));
